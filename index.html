@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | Social links profile</title>
+
+  <style>
+
+    * { box-sizing: border-box;}
+    body { background-color: hsl(0, 0%, 8%);}
+    span { font-family:"Inter";}
+    a { text-decoration: none; font-family:"Inter";}
+
+    .container {
+      height: 100vh;
+      width: auto;
+      display:flex;
+      flex-flow: row nowrap;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .card {
+      width: 350px;
+      height:auto;
+      padding: 40px;
+      background-color: hsl(0, 0%, 12%);
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: flex-start;
+      align-items: center;
+      border-radius: 10px;
+
+    }
+    .img {
+      width: 75px;
+      height: 75px;
+      border-radius: 50%;
+    }
+    
+    .s1 {
+      margin-top: 25px;
+      color: hsl(0, 0%, 100%);
+      font-size: 23px;
+      font-weight: 600;
+    }
+
+    .s2 {
+      color: hsl(75, 94%, 57%);
+      font-weight: 600;
+      font-size: 13px;
+    }
+
+    .s3 {
+      margin-top: 25px;
+      color: hsl(0, 0%, 100%);
+      font-weight: 300;
+      font-size: 14px;
+    }
+
+    .a1 {
+      margin-top: 20px;
+      width: 100%;
+      text-align: center;
+      background-color: hsl(0, 0%, 20%);
+      padding: 7px;
+      border-radius: 7px;
+      transition: 0.2s ease-in;
+    }
+
+    .a1:hover {
+      background-color: hsl(75, 94%, 57%);
+    }
+
+    .a1:hover div span {
+      color: hsl(0, 0%, 12%);
+    }
+
+    .a1 div {
+      width: 100%;
+    }
+
+    .a1 div span {
+      color: hsl(0, 0%, 100%);
+      font-weight: 600;
+      font-size: 12px;
+    }
+
+    .a2 {
+      margin-top: 12px;
+      width: 100%;
+      text-align: center;
+      background-color: hsl(0, 1%, 22%);
+      padding: 7px;
+      border-radius: 7px;
+      transition: 0.2s ease-in;
+    }
+
+    .a2:hover {
+      background-color: hsl(75, 94%, 57%);
+    }
+
+    .a2:hover div span {
+      color: hsl(0, 0%, 12%);
+    }
+
+    .a2 div {
+      width: 100%;
+    }
+
+    .a2 div span {
+      color: hsl(0, 0%, 100%);
+      font-weight: 600;
+      font-size: 12px;
+    }
+
+    @media screen and (max-width: 450px) {
+      .card {
+        width: 300px;
+      }
+      .s3 {
+        font-size: 12px;
+      }
+    }
+
+  </style>
+
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+
+      <img class="img" src="/assets/images/avatar-jessica.jpeg" alt="Jessica">
+      <span class="s1">Jessica Randall</span>
+      <span class="s2">London, United Kingdom</span>
+      <span class="s3">"Front-end developer and avid reader."</span>
+
+      <a  class="a1" href="#"><div><span>GitHub</span></div></a>
+      <a  class="a2" href="#"><div><span>Frontend Mentor</span></div></a>
+      <a  class="a2" href="#"><div><span>LinkedIn</span></div></a>
+      <a  class="a2" href="#"><div><span>Twitter</span></div></a>
+      <a  class="a2" href="#"><div><span>Instagram</span></div></a>
+
+  </div>
+  </div>
+  
+  
+</body>
+</html>
